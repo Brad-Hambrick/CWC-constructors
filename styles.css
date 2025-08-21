@@ -64,6 +64,11 @@ body {
   color: rgb(246, 68, 68);
 }
 
+.previousCont {
+  color: white;
+  font-size: xx-large;
+}
+
 #contactButton {
   margin: 2rem;
   font-size: large;

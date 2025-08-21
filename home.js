@@ -11,8 +11,8 @@ const homeContent = `
     `;
 
 const previousContent = `
-        <div>
-            <h1>THIS IS OUR PREVIOUS WORK</h1>
+        <div class="previousCont">
+            <h1>I NEED PICTURES</h1>
         </div>
     `;
 
