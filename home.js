@@ -42,10 +42,25 @@ const contactPage = `
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <button id="submitButton" onclick="sendMail()" type="submit">Send Message</button>
                 </form>
             </div>
     `;
+
+function sendMail() {
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("message").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs
+    .send("service_11egvfj", "template_cxhrjuc", params)
+    .then(alert("Your message has been sent"));
+}
+
+const submitButton = document.getElementById("submitButton");
 
 window.onload = pageContent.innerHTML = homeContent;
 

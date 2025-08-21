@@ -10,7 +10,20 @@ body {
 }
 
 .header {
-  background-color: blue;
+  background-image: url("./images/bkgrdimg.jpg");
+}
+
+.logoCont {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: auto;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
 }
 
 .homebuttonCont {
