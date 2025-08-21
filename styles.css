@@ -7,9 +7,6 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-.header {
   background-image: url("./images/bkgrdimg.jpg");
 }
 
@@ -32,11 +29,16 @@ body {
 #homeButton {
   margin: 2rem;
   font-size: large;
-  background-color: blue;
+  background-image: url("./images/bkgrdimg.jpg");
   color: white;
   border: 2px solid white;
   border-radius: 15%;
   padding: 4px;
+}
+
+#homeButton:hover {
+  background-color: white;
+  color: rgb(246, 68, 68);
 }
 
 .navCont {
@@ -48,21 +50,31 @@ body {
 #previousButton {
   margin: 2rem;
   font-size: large;
-  background-color: blue;
+  background-image: url("./images/bkgrdimg.jpg");
   color: white;
   border: 2px solid white;
   border-radius: 15%;
   padding: 4px;
 }
 
+#previousButton:hover {
+  background-color: white;
+  color: rgb(246, 68, 68);
+}
+
 #contactButton {
   margin: 2rem;
   font-size: large;
-  background-color: blue;
+  background-image: url("./images/bkgrdimg.jpg");
   color: white;
   border: 2px solid white;
   border-radius: 15%;
   padding: 4px;
+}
+
+#contactButton:hover {
+  background-color: white;
+  color: rgb(246, 68, 68);
 }
 
 .cwcHeader {
@@ -106,14 +118,17 @@ p {
 /* CONTACT FORM */
 
 .contactHeader {
+  color: white;
   padding: 20px;
 }
 
 .contactCont {
+  color: white;
 }
 
 .phoneCont {
   margin: 45px;
+  color: white;
 }
 
 form {
