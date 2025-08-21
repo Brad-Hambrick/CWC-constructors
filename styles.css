@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-image: url("./images/bkgrdimg.jpg");
+  overflow-x: hidden;
 }
 
 .logoCont {
@@ -20,7 +22,7 @@ body {
   height: 20rem;
   display: flex;
   justify-content: center;
-  border-radius: 100%;
+  /* border-radius: 100%; */
 }
 
 .homebuttonCont {
@@ -170,4 +172,66 @@ button:hover {
   text-align: center;
   font-size: 2rem;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .navCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .prevContactContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .logo {
+    width: auto;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #previousButton {
+    font-size: medium;
+    background-image: url("./images/bkgrdimg.jpg");
+    color: white;
+    border: 2px solid white;
+    border-radius: 15%;
+    margin-top: 2rem;
+  }
+
+  #homeButton {
+    font-size: large;
+    background-image: url("./images/bkgrdimg.jpg");
+    color: white;
+    border: 2px solid white;
+    border-radius: 15%;
+    margin: 0;
+  }
+
+  #contactButton {
+    font-size: large;
+    background-image: url("./images/bkgrdimg.jpg");
+    color: white;
+    border: 2px solid white;
+    border-radius: 15%;
+    margin-bottom: 0;
+  }
 }
